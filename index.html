@@ -8,12 +8,16 @@
   <style type="text/css" >
     body {
       margin: 0;
+      border: none !important;
+      background-color: white !important;
+      border-style: hidden !important;
     }
     table {
       border-spacing: 0;
-      border: none;
+      border: none !important;
       border-collapse: collapse;
       box-sizing: border-box;
+      border-style: hidden !important;
     }
     td {
       padding: 0;
@@ -34,23 +38,115 @@
       table-layout: fixed;
       background-color: #eee;
       padding-bottom: 60px;
+      border: none !important;
+      border-style: hidden !important;
     }
     .main-table {
       width: 100%;
       max-width: 600px;
       background-color: white;
       font-family: Arial, Helvetica, sans-serif;
+      border: none !important;
+      border-style: hidden !important;
     }
+
+  @media screen and (max-width: 599.98px) {
+    .citi-logo {
+      display: block;
+      width: 100% !important;
+    }
+    .acount-and-card {
+      display: block;
+      width: 100% !important;
+    }
+    .account__info {
+      width: 85% !important;
+    }
+    .card-img {
+      width: 15% !important;
+    }
+    .account-bill-contact {
+      width: 100%;
+    }
+    .account-bill-contact__row {
+      display: block;
+      width: 100% !important;
+      text-align: left !important;
+      padding: 15px 0 !important;
+      border-bottom: 1px solid rgb(196, 196, 196);
+    }
+    .account-bill-contact__row.bill {
+      border-left: none !important;
+      border-right: none !important;
+    }
+    .footer__mobile-app {
+      display: block;
+    }
+    .mobile-apps__spacer {
+      display: block;
+      height: 3px !important;
+    }
+    .footer__citi-black-logo {
+      display: block;
+      width: 100% !important;
+    }
+    .footer__privacy-security-wrapper {
+      display: block;
+    }
+    .footer__privacy-security {
+      display: block;
+      width: 100% !important;
+    }
+    .footer__privacy-security.security {
+      text-align: left !important;
+      padding-top: 12px;
+    }
+  }
+  @media screen and (max-width: 439.9px) {
+    .account__info {
+      width: 80% !important;
+    }
+    .card-img {
+      width: 20% !important;
+    }
+    .logo-and-account > table {
+      width: 320px !important;
+    }
+    .account-transaction > table {
+      width: 320px !important;
+    }
+    .transaction-amount-wrapper > table {
+      width: 320px !important;
+    }
+    .citi-team-wrapper > table {
+      width: 320px !important;
+    }
+    .account-bill-contact > table {
+      width: 320px !important;
+    }
+    .footer {
+      padding: 0 !important;
+    }
+    .footer > table {
+      width: 320px !important;
+    }
+    .transaction-text {
+      white-space: normal !important;
+    }
+   
+
+  }
+
 
 
   </style>
 </head>
 <body>
   <center class="wrapper">
-    <table class="main-table" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+    <table class="main-table" width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
 <!-- Top Text--> 
       <tr>
-        <td>
+        <td style="width: 100%;">
           <p style="font-size: 12px;color: #666;">View the transaction details.</p>
         </td>
       </tr>
@@ -116,7 +212,7 @@
           <table cellpadding="0" cellspacing="0" role="presentation" align="center" style="width: 420px;background-color: #ccc;border-radius: 5px 5px 0 0;" >
             <tr>
               <td style="padding: 25px 20px;text-align: left;margin-top: 0;margin-bottom: 0;">
-                <img style="width: 24px;vertical-align: top;padding-top: 10px;" src="https://ci3.googleusercontent.com/proxy/T8MQjvzZde73-wSrjgSzHQi-dxQ3x3I6eHnm_5XfVIQhP5s3Z38DL_vF_bMWGMPcwv1LoyzRI4dXgzjRrT1FPJvBM6lt0SVN-OP5Q7y7JUNoM8ESaa-ijCThiXfTujhbRZBWD1_aIxB6KdeLqBYVsVWGB4AtnlSy=s0-d-e1-ft#https://snamwpm.eccmp.com/wpm/617/ContentUploads/Headline/Apr20_Citi_RGB_HeadlineIcon_CustomAlert.png" alt="bell icon"><span style="font-size: 34px;white-space: pre-line;vertical-align: top;margin-top: 0;line-height: 1.4;color: #333;"> A transaction of 
+                <img style="width: 24px;vertical-align: top;padding-top: 10px;" src="https://ci3.googleusercontent.com/proxy/T8MQjvzZde73-wSrjgSzHQi-dxQ3x3I6eHnm_5XfVIQhP5s3Z38DL_vF_bMWGMPcwv1LoyzRI4dXgzjRrT1FPJvBM6lt0SVN-OP5Q7y7JUNoM8ESaa-ijCThiXfTujhbRZBWD1_aIxB6KdeLqBYVsVWGB4AtnlSy=s0-d-e1-ft#https://snamwpm.eccmp.com/wpm/617/ContentUploads/Headline/Apr20_Citi_RGB_HeadlineIcon_CustomAlert.png" alt="bell icon"><span class="transaction-text" style="font-size: 34px;white-space: pre-line;vertical-align: top;margin-top: 0;line-height: 1.4;color: #333;"> A transaction of 
                   $27.14 was made on your account</span>
               </td>
             </tr>
@@ -259,7 +355,7 @@
       </tr>
       <tr>
         <td class="footer" style="width: 100%;max-width: 600px; background-color: #eee;padding: 0 15px;">
-          <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;max-width: 600px;">
+          <table cellpadding="0" cellspacing="0" role="presentation" style="border-collapse: collapse;max-width: 600px;" align="center">
             <tr>
               <td style="width: 100%;">
                 <p style="font-size: 10px;color: #666;padding-bottom: 5px;vertical-align: top;">Download the Citi Mobile® App</p>
@@ -314,7 +410,7 @@
                           <td class="footer__privacy-security" style="text-align: left;width: 60%;">
                             <a href="#" style="font-size: 13px;color: #666;vertical-align: middle;text-align: left;">Privacy</a>
                           </td>
-                          <td class="footer__privacy-security" style="text-align: right;width: 40%;">
+                          <td class="footer__privacy-security security" style="text-align: right;width: 40%;">
                             <a href="#" style="font-size: 13px;color: #666;vertical-align: middle;text-align: right;">Security</a>
                           </td>
                         </tr>
